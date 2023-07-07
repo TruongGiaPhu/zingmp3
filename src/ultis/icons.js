@@ -11,8 +11,8 @@ import {
 } from 'react-icons/hi';
 import { TbChartArcs } from 'react-icons/tb';
 import {
-    AiOutlineArrowLeft,
-    AiOutlineArrowRight,
+    // AiOutlineArrowLeft,
+    // AiOutlineArrowRight,
     AiFillHeart,
     AiOutlineHeart,
 } from 'react-icons/ai';
@@ -31,8 +31,8 @@ const icons = {
     HiOutlineChartPie,
     TbChartArcs,
     MdOutlineFeed,
-    AiOutlineArrowRight,
-    AiOutlineArrowLeft,
+    // AiOutlineArrowRight,
+    // AiOutlineArrowLeft,
     HiArrowNarrowLeft,
     HiArrowNarrowRight,
     FiSearch,

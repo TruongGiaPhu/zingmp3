@@ -7,9 +7,9 @@ const SidebarLeft = () => {
     const activeStyle =
         'py-2 px-[25px] font-semibold flex gap-3 items-center text-[#0F7070]';
     const notActiveStyle =
-        'py-2 px-[25px]  font-semibold flex gap-3 items-center';
+        'py-2 px-[25px]  font-semibold flex gap-3 items-center text-[#FFFFFF]';
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-[#423E4D] h-full ">
             <div className="w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center">
                 <img src={Logo} alt="logo" className="w-[120px] h-10 " />
             </div>

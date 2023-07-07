@@ -1,10 +1,17 @@
-import { useSelector, useDispatch } from 'react-redux/es/hooks/useSelector';
+import { useSelector, useDispatch } from 'react-redux';
 import { Home, Login, Public } from './containers/public';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import path from './ultis/path';
+import { useEffect } from 'react';
+import * as actions from './store/actions';
 
 function App() {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(actions.getHome());
+    }, []);
+
     return (
         <div>
             <BrowserRouter>

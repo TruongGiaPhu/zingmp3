@@ -1,14 +1,18 @@
 import acitonTypes from '../actions/actionTypes';
 
 const initState = {
-    HomeData: [],
-    text: '123',
+    banner: [],
 };
 
 const appReducer = (state = initState, aciton) => {
     switch (aciton.type) {
         case acitonTypes.GET_HOME:
-            return state;
+            return {
+                ...state,
+                banner:
+                    aciton.homeData?.find(item => item.sectionType === 'banner')
+                        ?.items || null,
+            };
 
         default:
             return state;
